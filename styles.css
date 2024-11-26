@@ -1,1 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #1a1a1a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header .menu ul li a:hover {
+    background: #555;
+}
+
+/* Parallax Articles */
+.parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.parallax.reverse {
+    flex-direction: row-reverse;
+}
+
+.parallax .text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.parallax .image {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.parallax .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+    position: relative;
+}
+
+/* Scroll Animation */
+[data-rotate="left"],
+[data-rotate="right"] {
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
 

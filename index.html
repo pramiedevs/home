@@ -1,20 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pramiedevs Projects</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Pramie - Diseño Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Pramiedevs!</h1>
-    <p>Check out my projects:</p>
-    <ul>
-        <li><a href="https://pramiedevs.github.io/naginattaz">Naginattaz</a></li>
-        <li><a href="https://pramiedevs.github.io/fastmail">Fastmail</a></li>
-        <li><a href="https://pramiedevs.github.io/keyhole">Keyhole</a></li>
-    </ul>
+    <!-- Header -->
+    <header>
+        <div class="logo">Pramie</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#clients">Nuestros Clientes</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main id="home">
+        <article class="parallax">
+            <div class="text">
+                <h2>Artículo 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim.</p>
+            </div>
+            <div class="image" data-rotate="right">
+                <img src="https://via.placeholder.com/400" alt="Ejemplo 1">
+            </div>
+        </article>
+        <article class="parallax reverse">
+            <div class="image" data-rotate="left">
+                <img src="https://via.placeholder.com/400" alt="Ejemplo 2">
+            </div>
+            <div class="text">
+                <h2>Artículo 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim.</p>
+            </div>
+        </article>
+        <article class="parallax">
+            <div class="text">
+                <h2>Artículo 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim.</p>
+            </div>
+            <div class="image" data-rotate="right">
+                <img src="https://via.placeholder.com/400" alt="Ejemplo 3">
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Pramie. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
