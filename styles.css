@@ -57,9 +57,6 @@ header .menu ul li a:hover {
     perspective: 1000px;
 }
 
-.parallax.reverse {
-    flex-direction: row-reverse;
-}
 
 .parallax .text {
     flex: 1;
