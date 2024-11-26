@@ -43,3 +43,23 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
+// Select elements
+const loadingText = document.getElementById('loading-text');
+const dots = document.getElementById('dots');
+const logoText = document.getElementById('logo-text');
+
+// Animate the dots
+let dotCount = 0;
+const maxDots = 3;
+
+const dotInterval = setInterval(() => {
+    dotCount = (dotCount + 1) % (maxDots + 1); // Cycle between 0, 1, 2, 3 dots
+    dots.textContent = '.'.repeat(dotCount); // Update the dots
+}, 500); // Change every 500ms
+
+// Transition to logo after 2 seconds
+setTimeout(() => {
+    clearInterval(dotInterval); // Stop the dot animation
+    loadingText.style.display = 'none'; // Hide "Loading..."
+    logoText.classList.remove('hidden'); // Show "Pramie" with fade-in
+}, 2000);

@@ -20,6 +20,30 @@ body.light-mode {
     background-size: 400% 400%;
     animation: gradientAnimationLight 10s ease infinite;
 }
+.orbitron-title {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  .orbitron-title-light {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  .nunito-t {
+    font-family: "Nunito", sans-serif!important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunito-p {
+    font-family: "Nunito", sans-serif!important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
 
 /* Dark Mode Animation */
 @keyframes gradientAnimationDark {
@@ -49,11 +73,6 @@ header {
     z-index: 10;
 }
 
-header .logo {
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-}
 
 /* Dark Mode Toggle Button */
 #dark-mode-toggle {
@@ -104,7 +123,65 @@ header .logo {
 }
 
 
+#logo-container{
+    height: 40px;
+}
+
+/* General Logo Styles */
+.logo {
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Loading Text */
+#loading-text {
+    font-size: 18px; /* Smaller size for "Loading" */
+    color: rgb(212, 208, 208);
+    margin-top: 40px;
+}
+
+/* Hidden Element (Pramie Initially) */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Fade-In Animation for Logo */
+#logo-text {
+    font-size: 48px; /* Final logo size */
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s ease-out, flicker 0.5s steps(120) 3s forwards; /* Flicker for 2 seconds after fade-in */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    20% { opacity: 0.2; }
+    40% { opacity: 1; }
+    60% { opacity: 0.2; }
+    80% { opacity: 1; }
+    100% { opacity: 1; } /* End flickering, keep full opacity */
+}
+
+
+
+
+
+
 header .menu {
+    margin-top: 10px;
     width: 100%; /* Full width for nav menu */
 }
 
@@ -129,7 +206,7 @@ header .menu ul li a {
     padding: 8px 16px;
     border-radius: 5px;
     transition: background 0.3s ease;
-    color:white;
+    color:rgb(216, 164, 240);
 
 }
 

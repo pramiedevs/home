@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pramie - Diseño Web</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Pramie</div>
+        <div class="logo" id="logo-container">
+            <span id="loading-text" class="orbitron-title-light">Loading<span id="dots"></span></span>
+            <span id="logo-text" class="hidden orbitron-title">pramie</span> <!-- Placeholder for logo -->
+        </div>
         <button id="dark-mode-toggle" class="light" aria-label="Toggle dark mode">
             <span id="icon">🌙</span>
         </button>
         <nav class="menu">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./about.html">Sobre Nosotros</a></li>
-                <li><a href="./clients.html">Nuestros Clientes</a></li>
-                <li><a href="./contact.html">Contáctanos</a></li>
+                <li><a href="./index.html" class="nunito-t">Inicio</a></li>
+                <li><a href="./about.html" class="nunito-t">Sobre Nosotros</a></li>
+                <li><a href="./clients.html" class="nunito-t">Nuestros Clientes</a></li>
+                <li><a href="./contact.html" class="nunito-t">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +39,7 @@
         <article class="parallax">
             <div class="text parallax-text-left">
                 <h2>Artículo 1</h2>
-                <p class="glass">
+                <p class="glass nunito-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim. Proin a scelerisque orci. Etiam efficitur lorem vel mi suscipit pellentesque.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim. Proin a scelerisque orci. Etiam efficitur lorem vel mi suscipit pellentesque.
                 </p>
