@@ -48,30 +48,31 @@ header .menu ul li a:hover {
 /* Parallax Articles */
 .parallax {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center; /* Ensures image is centered vertically */
+    height: auto;
+    min-height: 100vh;
     padding: 0 10%;
     position: relative;
     overflow: hidden;
     perspective: 1000px;
 }
 
-
 .parallax .text {
     flex: 1;
-    text-align: left;
     padding: 20px;
 }
 
 .parallax .image {
     flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .parallax .image img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -82,7 +83,6 @@ footer {
     padding: 20px;
     background: #1a1a1a;
     color: white;
-    position: relative;
 }
 
 /* Scroll Animation */
